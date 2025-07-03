@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fancy Group Chat + Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Join Group Chat</h2>
+    <input type="text" id="username" placeholder="Enter your username" />
+    <button id="loginBtn">Join Chat</button>
+  </div>
+
+  <div id="chat-screen" class="hidden">
+    <div class="chat-container">
+      <div class="user-list" id="userList"></div>
+      <div class="chat-box" id="messages"></div>
+    </div>
+    <form id="form">
+      <input id="input" autocomplete="off" placeholder="Type a message or command..." /><button>Send</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
